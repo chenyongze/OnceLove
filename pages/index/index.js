@@ -29,7 +29,7 @@ Page({
     wx.request({
       url: 'https://qiaker.cn/wxlogin',
       data: {  
-             
+
       },
       success: function (res) {
         console.log(res);
