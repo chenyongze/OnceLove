@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container {
+  font-weight: 200;
+} 
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <image src="/images/head_4.jpg"/>
+  </view>
+  <view class="date">
+    <view>2017年12月12日</view>
+    <view>农历 腊月 初十</view>
+  </view>
+  <view class="name">
+    <span class="fl">梁山伯</span>
+    <span class="fr">朱丽叶</span>  
+  </view>
+  <view class="title">已有342人赞过</view>
+  <view class="friends">
+    <view class="face"><image src="/images/face.png" /></view>
+    <view class="face"><image src="/images/face.png" /></view>
+    <view class="face"><image src="/images/face.png" /></view>
+    <view class="face"><image src="/images/face.png" /></view>
+    <view class="face"><image src="/images/face.png" /></view>
+    <view class="face"><image src="/images/face.png" /></view>
+    <view class="face"><image src="/images/face.png" /></view>
+    <view class="face"><image src="/images/face.png" /></view>
+  </view>
+  <view class="btn_zone">
+    <view class="zan fl">
+      <button type="primary">点赞</button>  
+    </view>
+    <view class="share fr">
+      <button type="default" open-type="share">分享</button>  
+    </view>
+  </view>
+  <view class="address">
+    山东省潍坊市万达广场
+  </view>
+  <view class="map">
+    <map id="map" longitude="119.128520" latitude="36.718820" scale="18" controls="{{controls}}" markers="{{markers}}" bindmarkertap="markertap" show-location style="width: 100%; height: 300px;"></map>
+  </view>
+</view>

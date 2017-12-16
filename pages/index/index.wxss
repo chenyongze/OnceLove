@@ -1,0 +1,60 @@
+/**index.wxss**/
+.head image{
+  width: 750rpx;
+  height: 563rpx;
+}
+.title {
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+}
+.date {
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 50rpx;
+}
+.name {
+  width: 400rpx;
+  margin: 0 auto;
+  min-height: 0;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.friends {
+  min-height: 0;
+  overflow: hidden;
+  width: 480rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.face {
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  margin: 10rpx;
+}
+.face image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.btn_zone {
+  padding: 30rpx 50rpx;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  min-height: 0;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.zan {
+  width: 400rpx;
+}
+.share {
+  width: 200rpx;
+}
+.address {
+  text-align: center;
+  padding: 30rpx;
+  background-color: #f8f8f8; 
+}
