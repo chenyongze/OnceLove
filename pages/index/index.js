@@ -24,21 +24,36 @@ Page({
       address: '山东省潍坊市万达广场'
     })
   },
-  getData: function (id) {
-    var that = this;
+  onLoad: function () {
+
+    var that = this
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo( function( userInfo ) {
+      //更新数据
+      that.setData( {
+        userInfo: userInfo
+      })
+    })
+
     wx.request({
       url: 'https://qiaker.cn/wxlogin',
-      data: {  
-
+      method: 'GET',
+      data: {},
+      header: {
+        'Accept': 'application/json'
       },
-      success: function (res) {
-        console.log(res);
-        that.setData({
-        })
+      success: function(res) {
+        console.log(res.data)
+        that.data.items = res.data
       }
-    });
+    })
   },
-  onLoad: function () {
-    this.getData();
+  onShareAppMessage: function (options) {
+    //console.log(options);
+    return {
+      title: '标题',
+      desc: '描述',
+      path: '/pages/index/',
+    }
   }
 })
