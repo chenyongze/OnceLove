@@ -36,7 +36,7 @@ Page({
     })
 
     wx.request({
-      url: 'https://qiaker.cn/wxlogin',
+      url: 'https://wx.qiaker.cn/api',
       method: 'GET',
       data: {},
       header: {
